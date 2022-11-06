@@ -110,10 +110,7 @@ body{
 .clients{
     display: inline-flex;
 }
-.client-list{
-    box-sizing: border-box;
-}
-.client-list:not(:last-child){
+.clients>li:not(:last-child){
     margin-right: 30px;
 }
 .client-logo{
@@ -340,11 +337,16 @@ body{
 }
 .featurs{
     display: flex;
-    align-items: flex-start;
 }
 .featurs>li:not(:first-child){
     margin-left: 30px;
-}   
+}
+.feature-logo{
+    width: 270px;
+    height: 120px;
+    background-color: var(--btn-color);
+    padding: 25px 100px;
+}
 .filter{
     display: flex;
     justify-content: center;    
