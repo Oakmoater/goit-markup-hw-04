@@ -3,11 +3,12 @@
     --akcent-color:#2196F3;
     --akcent-text-color:#FFFFFF;
     --akcent-text-transperent: rgba(255, 255, 255, 0.6);
+    --logo-bg-transperent: rgba(255, 255, 255, 0.1);
     --btn-color:#F5F4FA;
     --text-color:#212121;
     --text-color-primary:#757575;
     --hero-bg:#C4C4C4;
-    --logos-color: #AFB1B8; 
+    --logos-color:#AFB1B8; 
 }
 html{
     box-sizing: border-box;
@@ -40,6 +41,15 @@ body{
 .header-section{
     display: flex;
 }    
+.footer-section{
+    display: flex;
+}
+.footer-social-section{
+    box-sizing: border-box;
+    margin-left: 70px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
 .portpholio{
     padding-top: 94px;
     padding-bottom: 94px;
@@ -185,6 +195,38 @@ body{
     font-style: normal;
     line-height: 1.71;
 }
+.footer-title{
+    font-size: 14px;
+    line-height: 1.16;
+    color: var(--akcent-text-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer-socials{
+    display: flex;
+    justify-content: center;
+}
+.footer-social-title:not(:last-child) {
+    margin-right: 10px;
+}
+.footer-social-title{
+    width: 44px;
+    height: 44px;
+}
+.footer-social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: var(--akcent-text-color);
+    background-color: var(--logo-bg-transperent);
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--akcent-color);
+}
 .logo-header{
     font-family:"Raleway";
     font-weight: 700;
@@ -252,27 +294,28 @@ body{
     display: flex;
     justify-content: center;
 }
-.team-socials>li{
+.social-list-item:not(:last-child){
+    margin-right: 10px;
+}
+.social-list-item {
     width: 44px;
     height: 44px;
-    background-color: var(--akcent-text-color);
-    border-radius: 50%;
 }
-.team-socials>li:not(:last-child){
-    margin-right: 10px;
-}    
-.team-social-logo{
-    fill: var(--logos-color);
-    padding: 12px;
-}
-.social-link{
+.social-list-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    display: inline-block;
+    border-radius: 50%;
+    color: var(--logos-color);
 }
-.team-social-logo:hover,.team-social-logo:focus {
+.social-list-icon{
+    fill: currentColor;
+}
+.social-list-link:hover, .social-list-link:focus{
     background-color: var(--akcent-color);
-    fill: var(--akcent-text-color);
+    color: var(--akcent-text-color);
 }
 .btn{
     margin-top: 30px;
@@ -358,8 +401,13 @@ body{
     padding-bottom: 32px;
     margin-left: auto;
 }
-.header-contakts .list:not(:first-child){
-    margin-left: 50px;
+.header-contakt-list{
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
+.header-contakt-list:not(:first-child){
+    margin-left: 30px;
 }
 .featurs{
     display: flex;
