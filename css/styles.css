@@ -179,7 +179,7 @@ body{
     font-weight: 500;
     line-height: 1.17;
     color: var(--text-color-primary);
-    display: inline-flex;
+    display: flex; 
     align-items: center;
 }
 .header-contakts-logo{
