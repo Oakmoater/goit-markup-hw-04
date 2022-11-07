@@ -180,7 +180,12 @@ body{
     line-height: 1.17;
     color: var(--text-color-primary);
 }
-.address-footer:hover, .address-footer:focus,.contacts-head:hover, .contacts-head:focus, .contacts-footer:hover, .contacts-footer:focus{
+.header-contakts-logo{
+    fill: currentColor;
+}
+.address-footer:hover, .address-footer:focus,
+.contacts-head:hover, .contacts-head:focus,
+.contacts-footer:hover, .contacts-footer:focus{
     color: var(--akcent-color);
 }
 .address-footer{
