@@ -43,12 +43,11 @@ body{
 }    
 .footer-section{
     display: flex;
+    align-items: baseline;
 }
 .footer-social-section{
     box-sizing: border-box;
     margin-left: 70px;
-    margin-top: 12px;
-    margin-bottom: 40px;
 }
 .portpholio{
     padding-top: 94px;
@@ -123,15 +122,25 @@ body{
 .clients>li:not(:last-child){
     margin-right: 30px;
 }
-.client-logo{
+.client-list{
     width: 170px;
     height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--logos-color);
+}
+.client-link{
+    width: 100%;
+    height: 100%;
+    color: var(--logos-color);
     border: 1px solid var(--logos-color);
     border-radius: 4px;
-    fill: var(--logos-color);
-    padding: 16px 32px;
 }
-.client-logo:hover, .client-logo:focus{
+.client-logo{
+    fill: currentColor;
+}
+.client-link:hover, .client-link:focus{
     border-color: var(--akcent-color);
     fill: var(--akcent-color);
 }
@@ -182,6 +191,17 @@ body{
     display: flex; 
     align-items: center;
 }
+.header-contakts {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: auto;
+}
+.header-contakt-list {
+    display: block;
+    justify-content: center;
+    align-content: center;
+}
 .header-contakts-logo{
     fill: currentColor;
     margin-right: 10px;
@@ -204,6 +224,7 @@ body{
     line-height: 1.71;
 }
 .footer-title{
+    display: block;
     font-size: 14px;
     line-height: 1.16;
     color: var(--akcent-text-color);
@@ -268,6 +289,7 @@ body{
     line-height: 1.71;
 }
 .feature-title{
+    margin-top: 30px;
     font-size: 14px;
     line-height: 1.14;  
     text-transform: uppercase;
@@ -403,17 +425,6 @@ body{
 .header-nav .list:not(:first-child){
     margin-left: 50px;
 }
-.header-contakts{
-    display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    margin-left: auto;
-}
-.header-contakt-list{
-    display: block;
-    justify-content: center;
-    align-content: center;
-}
 .header-contakt-list:not(:first-child){
     margin-left: 30px;
 }
@@ -423,11 +434,14 @@ body{
 .featurs>li:not(:first-child){
     margin-left: 30px;
 }
-.feature-logo{
+.feature-logo-container{
+    background-color: var(--btn-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
-    background-color: var(--btn-color);
-    padding: 25px 100px;
 }
 .filter{
     display: flex;
